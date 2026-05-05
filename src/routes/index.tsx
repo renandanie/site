@@ -15,7 +15,6 @@ const FEATURES = [
   "Suporte via WhatsApp (Seg à Sex)",
   "Criação das artes para os anúncios",
   "Gestão Google My Business",
-  "Criação de Landing Page",
   "Consultoria Comercial e Funil de Vendas",
   "Consultoria Estratégica em Redes Sociais",
 ];
@@ -31,7 +30,13 @@ type Plan = {
 };
 
 const PLANS: Plan[] = [
-  { name: "Bronze", tagline: "COMEÇAR COM MÉTODO", price: "R$ 698", includedCount: 4 },
+  {
+    name: "Bronze",
+    tagline: "COMEÇAR COM MÉTODO",
+    price: "R$ 698",
+    includedCount: 4,
+    featureOverrides: { 0: "Gestão de anúncio no Meta ou Google" },
+  },
   {
     name: "Prata",
     tagline: "ESCALAR COM PREVISIBILIDADE",
@@ -40,8 +45,8 @@ const PLANS: Plan[] = [
     highlight: true,
     featureOverrides: { 3: "Suporte via WhatsApp (Prioridade)" },
   },
-  { name: "Ouro", tagline: "OPERAÇÃO COMPLETA", price: "R$ 1.618", includedCount: 8 },
-  { name: "Diamante", tagline: "CONSULTORIA PREMIUM", prefix: "a partir de", price: "R$ 2.998", includedCount: 9 },
+  { name: "Ouro", tagline: "OPERAÇÃO COMPLETA", price: "R$ 1.618", includedCount: 7 },
+  { name: "Diamante", tagline: "CONSULTORIA PREMIUM", prefix: "a partir de", price: "R$ 2.998", includedCount: 8 },
 ];
 
 function Header() {
