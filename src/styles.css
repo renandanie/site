@@ -61,11 +61,14 @@
   --input: oklch(0.92 0.01 260);
   --ring: oklch(0.62 0.18 250);
 
-  /* Pastel gradient background — pink → cream → green */
+  /* Pastel gradient background — pink (left) → cream (center) → green (right) */
   --gradient-page:
-    radial-gradient(ellipse 60% 50% at 0% 50%, oklch(0.93 0.06 25 / 0.55), transparent 60%),
-    radial-gradient(ellipse 60% 50% at 100% 50%, oklch(0.93 0.07 145 / 0.5), transparent 60%),
-    linear-gradient(180deg, oklch(0.985 0.01 80), oklch(0.97 0.015 90));
+    linear-gradient(90deg,
+      oklch(0.92 0.045 25) 0%,
+      oklch(0.95 0.03 40) 22%,
+      oklch(0.97 0.015 90) 50%,
+      oklch(0.95 0.04 130) 78%,
+      oklch(0.91 0.06 145) 100%);
   --gradient-cta: linear-gradient(135deg, oklch(0.62 0.18 250), oklch(0.55 0.2 255));
   --shadow-soft: 0 10px 40px -15px oklch(0.18 0.03 260 / 0.18);
   --shadow-card: 0 20px 60px -25px oklch(0.18 0.03 260 / 0.2);
