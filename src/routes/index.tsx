@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Check, ArrowUpRight, MessageCircle, GraduationCap, BookOpen, Award } from "lucide-react";
+import { Check, ArrowUpRight, MessageCircle, Award, Target, BarChart3, Sparkles, TrendingUp, Zap, Briefcase } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -121,17 +121,43 @@ function Index() {
             </div>
           </div>
 
-          {/* Stats strip */}
-          <div className="mt-20 grid grid-cols-2 gap-10 border-t border-border/70 pt-10 md:grid-cols-4">
+          {/* Services grid */}
+          <div className="mt-24 grid gap-8 md:grid-cols-2 md:items-end">
+            <h2 className="font-serif text-4xl leading-[1.05] text-ink md:text-5xl lg:text-6xl">
+              Tudo que sua operação de mídia precisa para{" "}
+              <span className="italic text-primary">escalar</span>.
+            </h2>
+            <p className="text-muted-foreground md:text-base">
+              Soluções integradas — da estratégia ao último ajuste no anúncio.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
-              { n: "9 anos", l: "de experiência comercial" },
-              { n: "5 anos", l: "em Marketing Digital" },
-              { n: "USP", l: "MBA em Gestão Estratégica" },
-              { n: "PUC", l: "Pós em Mídias Digitais" },
-            ].map((s) => (
-              <div key={s.l}>
-                <p className="font-serif text-4xl text-primary md:text-5xl">{s.n}</p>
-                <p className="mt-2 text-sm text-muted-foreground">{s.l}</p>
+              { icon: Target, title: "Meta Ads", desc: "Campanhas de aquisição e remarketing no Facebook e Instagram com criativos que convertem e estrutura de conta otimizada para escala.", tags: ["Advantage+", "Catálogo", "Lead Ads"] },
+              { icon: BarChart3, title: "Google Ads", desc: "Search, Performance Max, YouTube e Display orquestrados para capturar demanda quente e gerar pipeline qualificado.", tags: ["Search", "PMax", "YouTube"] },
+              { icon: Sparkles, title: "Social Media", desc: "Gestão estratégica de redes sociais com calendário editorial, posicionamento de marca e conteúdo planejado para gerar autoridade e conexão real com a audiência.", tags: ["Estratégia", "Conteúdo", "Engajamento"] },
+              { icon: TrendingUp, title: "Estratégia de Escala", desc: "Diagnóstico, planejamento de mídia e roadmap de crescimento com metas claras de CAC, ROAS e LTV para os próximos 90 dias.", tags: ["CAC", "LTV", "Funil"] },
+              { icon: Zap, title: "Criativos de Performance", desc: "Direção e produção de criativos baseados em dados, com testes contínuos para reduzir CPA e aumentar CTR consistentemente.", tags: ["UGC", "Hooks", "A/B"] },
+              { icon: Briefcase, title: "Consultoria Comercial", desc: "Estratégias de vendas, estruturação de funil comercial e atuação como closer para transformar leads qualificados em receita previsível.", tags: ["Funil de Vendas", "Closer", "Comercial"] },
+            ].map(({ icon: Icon, title, desc, tags }) => (
+              <div
+                key={title}
+                className="rounded-3xl border border-border/70 bg-white/75 p-7 backdrop-blur transition-all hover:-translate-y-1"
+                style={{ boxShadow: "var(--shadow-soft)" }}
+              >
+                <span className="grid h-11 w-11 place-items-center rounded-full border border-border/70 bg-white">
+                  <Icon className="h-5 w-5 text-primary" />
+                </span>
+                <h3 className="mt-6 font-serif text-2xl text-ink">{title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{desc}</p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {tags.map((t) => (
+                    <span key={t} className="rounded-full border border-border/70 bg-white/70 px-3 py-1 text-xs text-ink/70">
+                      {t}
+                    </span>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
@@ -153,20 +179,6 @@ function Index() {
             tem propósito — desde a estratégia de funil até a otimização diária.
           </p>
 
-          {/* Formação */}
-          <div className="mx-auto mt-14 grid max-w-3xl gap-4 text-left md:grid-cols-3">
-            {[
-              { icon: GraduationCap, title: "Formado em Marketing", sub: "Base sólida em comunicação" },
-              { icon: BookOpen, title: "Pós-graduação", sub: "Estratégia de Mídias Digitais — PUC" },
-              { icon: Award, title: "MBA", sub: "Gestão Estratégica de Negócios — USP" },
-            ].map(({ icon: Icon, title, sub }) => (
-              <div key={title} className="rounded-2xl border border-border/70 bg-white/70 p-5 backdrop-blur">
-                <Icon className="h-5 w-5 text-primary" />
-                <p className="mt-3 font-semibold text-ink">{title}</p>
-                <p className="mt-1 text-sm text-muted-foreground">{sub}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
