@@ -201,6 +201,10 @@ function Index() {
               <PlanCard key={plan.name} plan={plan} />
             ))}
           </div>
+
+          <p className="mt-12 text-center text-sm font-medium text-muted-foreground">
+            Todos os planos incluem reunião estratégica gratuita antes da contratação.
+          </p>
         </div>
       </section>
 
