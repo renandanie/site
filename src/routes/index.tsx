@@ -103,7 +103,6 @@ function Index() {
           <h1 className="mt-8 font-serif text-5xl leading-[1.02] text-ink md:text-7xl lg:text-[5.5rem]">
             Transforme investimento em{" "}
             <span className="italic text-primary">lucro</span>,
-            <br />
             com gestão <span className="italic text-[oklch(0.7_0.2_25)]">estratégica</span>.
           </h1>
 
