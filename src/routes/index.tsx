@@ -16,8 +16,8 @@ const FEATURES = [
   "Criação das artes para os anúncios",
   "Gestão Google My Business",
   "Criação de Landing Page",
-  "Consultoria de Vendas e Landing Page",
-  "Criação de Criativos (Artes/Vídeos)",
+  "Consultoria Comercial e Funil de Vendas",
+  "Consultoria Estratégica em Redes Sociais",
 ];
 
 type Plan = {
@@ -27,11 +27,19 @@ type Plan = {
   prefix?: string;
   highlight?: boolean;
   includedCount: number;
+  featureOverrides?: Record<number, string>;
 };
 
 const PLANS: Plan[] = [
-  { name: "Bronze", tagline: "COMEÇAR COM MÉTODO", price: "R$ 698", includedCount: 2 },
-  { name: "Prata", tagline: "ESCALAR COM PREVISIBILIDADE", price: "R$ 998", includedCount: 4, highlight: true },
+  { name: "Bronze", tagline: "COMEÇAR COM MÉTODO", price: "R$ 698", includedCount: 4 },
+  {
+    name: "Prata",
+    tagline: "ESCALAR COM PREVISIBILIDADE",
+    price: "R$ 998",
+    includedCount: 6,
+    highlight: true,
+    featureOverrides: { 3: "Suporte via WhatsApp (Prioridade)" },
+  },
   { name: "Ouro", tagline: "OPERAÇÃO COMPLETA", price: "R$ 1.618", includedCount: 8 },
   { name: "Diamante", tagline: "CONSULTORIA PREMIUM", prefix: "a partir de", price: "R$ 2.998", includedCount: 9 },
 ];
@@ -307,6 +315,7 @@ function PlanCard({ plan }: { plan: Plan }) {
       <ul className="mt-6 flex-1 space-y-3 text-sm">
         {FEATURES.map((feature, i) => {
           const included = i < plan.includedCount;
+          const label = plan.featureOverrides?.[i] ?? feature;
           return (
             <li key={feature} className="flex items-start gap-2.5">
               {included ? (
@@ -315,9 +324,9 @@ function PlanCard({ plan }: { plan: Plan }) {
                 <span className="mt-0.5 grid h-4 w-4 shrink-0 place-items-center text-muted-foreground/50">×</span>
               )}
               {included ? (
-                <span className="text-ink/85">{feature}</span>
+                <span className="text-ink/85">{label}</span>
               ) : (
-                <s className="text-muted-foreground/55">{feature}</s>
+                <s className="text-muted-foreground/55">{label}</s>
               )}
             </li>
           );
