@@ -203,7 +203,7 @@ function Index() {
           </div>
 
           <p className="mt-12 text-center text-sm font-medium text-muted-foreground">
-            Todos os planos incluem reunião estratégica gratuita antes da contratação.
+            Todos os planos incluem reunião estratégica gratuita na contratação.
           </p>
         </div>
       </section>
