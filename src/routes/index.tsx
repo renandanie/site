@@ -96,10 +96,8 @@ function Index() {
 
           <div className="mt-10 grid gap-10 md:grid-cols-2 md:items-end">
             <p className="max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              <strong className="text-ink">9 anos de experiência comercial</strong> e{" "}
-              <strong className="text-ink">5 anos em Marketing Digital</strong>.
-              Não entrego apenas cliques — entrego estratégia de negócio para o seu
-              faturamento escalar de forma previsível.
+              <strong className="text-ink">Marketing e Vendas precisam estar em sintonia para gerar resultados reais.</strong>{" "}
+              Não entrego apenas cliques — entrego estratégia de negócio para o seu faturamento escalar de forma previsível.
             </p>
 
             <div className="flex flex-wrap gap-3">
