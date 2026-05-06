@@ -237,7 +237,7 @@ function Index() {
             <h2 className="mx-auto mt-5 max-w-3xl font-serif text-4xl leading-tight text-ink md:text-6xl">
               Etapas para o{" "}
               <span className="italic text-[oklch(0.7_0.2_25)]">"Start"</span>{" "}
-              do projeto
+              do seu projeto
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-muted-foreground md:text-lg">
               Um caminho claro, do contrato à primeira veiculação — sem fricção, com método.
