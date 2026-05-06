@@ -11,7 +11,7 @@ const WHATSAPP_URL =
   "https://wa.me/5511913352181?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20a%20gest%C3%A3o%20de%20tr%C3%A1fego%20pago";
 
 const FEATURES = [
-  "Gestão de anúncios no Google e Meta",
+  "MAIS PROCURADO",
   "Relatório semanal de resultados de campanha",
   "Reunião mensal de alinhamento e estratégia",
   "Suporte via WhatsApp (Seg à Sex)",
