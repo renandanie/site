@@ -43,11 +43,11 @@ const PLANS: Plan[] = [
     name: "Prata",
     tagline: "ESCALAR COM PREVISIBILIDADE",
     price: "R$ 998",
-    includedCount: 6,
+    includedCount: 5,
     highlight: true,
     featureOverrides: { 3: "Suporte via WhatsApp (Prioridade)" },
   },
-  { name: "Ouro", tagline: "OPERAÇÃO COMPLETA", price: "R$ 1.618", includedCount: 7 },
+  { name: "Ouro", tagline: "OPERAÇÃO COMPLETA", price: "R$ 1.618", includedCount: 6 },
   { name: "Diamante", tagline: "CONSULTORIA PREMIUM", prefix: "a partir de", price: "R$ 2.998", includedCount: 8 },
 ];
 
