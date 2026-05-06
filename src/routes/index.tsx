@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Check, ArrowUpRight, MessageCircle, Award, Target, BarChart3, Sparkles, TrendingUp, Zap, Briefcase, FileSignature, CreditCard, MessageSquare, Users, Presentation, Play, BarChart2 } from "lucide-react";
 import logo from "@/assets/logo.jpg";
+import renan from "@/assets/renan.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -178,19 +179,69 @@ function Index() {
 
       {/* SOBRE */}
       <section id="sobre" className="px-6 py-24">
-        <div className="mx-auto max-w-4xl text-center">
-          <p className="text-xs font-semibold tracking-[0.25em] text-primary">SOBRE</p>
-          <h2 className="mt-5 font-serif text-4xl leading-tight text-ink md:text-6xl">
-            Mídia paga feita com <span className="italic text-primary">método</span>,
-            não com sorte.
-          </h2>
-          <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-            Marketing e Vendas precisam estar em sintonia para gerar resultados reais.
-            Trabalho lado a lado com founders e times de marketing para construir
-            operações de mídia previsíveis, rentáveis e escaláveis. Cada real investido
-            tem propósito — desde a estratégia de funil até a otimização diária.
-          </p>
+        <div className="mx-auto grid max-w-6xl items-center gap-14 lg:grid-cols-[auto,1fr]">
+          {/* Foto + nome */}
+          <div className="flex flex-col items-center lg:items-start">
+            <div className="relative">
+              <div
+                className="absolute -inset-4 rounded-[2rem] opacity-60 blur-2xl"
+                style={{ background: "linear-gradient(135deg, oklch(0.7 0.2 25 / 0.5), oklch(0.62 0.18 250 / 0.5))" }}
+              />
+              <div
+                className="relative overflow-hidden rounded-[2rem] border border-border/70 bg-white"
+                style={{ boxShadow: "var(--shadow-card)" }}
+              >
+                <img
+                  src={renan}
+                  alt="Renan Daniel — Estrategista Digital"
+                  className="h-[420px] w-[320px] object-cover"
+                />
+              </div>
+            </div>
+            <div className="mt-6 text-center lg:text-left">
+              <p className="font-serif text-3xl text-ink">Renan Daniel</p>
+              <p className="mt-1 text-xs font-semibold tracking-[0.25em] text-primary">
+                ESTRATEGISTA DIGITAL
+              </p>
+            </div>
+          </div>
 
+          {/* Texto */}
+          <div>
+            <p className="text-xs font-semibold tracking-[0.25em] text-primary">SOBRE</p>
+            <h2 className="mt-5 font-serif text-4xl leading-tight text-ink md:text-5xl lg:text-6xl">
+              Mídia paga feita com <span className="italic text-primary">método</span>,
+              não com sorte.
+            </h2>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
+              Marketing e Vendas precisam estar em sintonia para gerar resultados reais.
+              Trabalho lado a lado com founders e times de marketing para construir
+              operações de mídia previsíveis, rentáveis e escaláveis. Cada real investido
+              tem propósito — desde a estratégia de funil até a otimização diária.
+            </p>
+
+            <ul className="mt-8 space-y-3">
+              {[
+                "Formado em Marketing",
+                "Pós-graduado em Mídias Digitais — PUC",
+                "MBA em Gestão Estratégica de Negócios — USP",
+                "Certificado Google e Meta Ads",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2.5 text-sm text-ink/85">
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" strokeWidth={3} />
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <div
+              className="mt-8 inline-flex items-center gap-2 rounded-full border border-border/70 bg-white/80 px-4 py-2 text-sm text-ink backdrop-blur"
+              style={{ boxShadow: "var(--shadow-soft)" }}
+            >
+              <Briefcase className="h-4 w-4 text-primary" />
+              Estrategista Digital na <span className="font-semibold">Arteon Agência</span>
+            </div>
+          </div>
         </div>
       </section>
 
