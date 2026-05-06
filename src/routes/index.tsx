@@ -194,7 +194,7 @@ function Index() {
                 <img
                   src={renan}
                   alt="Renan Daniel — Estrategista Digital"
-                  className="h-[420px] w-[280px] object-contain bg-white"
+                  className="h-[420px] w-[280px] object-cover"
                 />
               </div>
             </div>
