@@ -181,7 +181,7 @@ function Index() {
       <section id="sobre" className="px-6 py-24">
         <div className="mx-auto grid max-w-6xl items-center gap-14 md:grid-cols-[auto,1fr]">
           {/* Foto + nome */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center">
             <div className="relative">
               <div
                 className="absolute -inset-4 rounded-[2rem] opacity-60 blur-2xl"
@@ -194,11 +194,11 @@ function Index() {
                 <img
                   src={renan}
                   alt="Renan Daniel — Estrategista Digital"
-                  className="h-[380px] w-[280px] object-cover"
+                  className="h-[320px] w-[240px] object-cover"
                 />
               </div>
             </div>
-            <div className="mt-6 text-center md:text-left">
+            <div className="mt-6 text-center">
               <p className="font-serif text-3xl text-ink">Renan Daniel</p>
               <p className="mt-1 text-xs font-semibold tracking-[0.25em] text-primary">
                 ESTRATEGISTA DIGITAL
