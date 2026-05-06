@@ -484,7 +484,7 @@ function PlanCard({ plan }: { plan: Plan }) {
         className={`mt-8 inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition-transform hover:scale-[1.02] ${
           isHighlight
             ? "bg-ink text-white"
-            : "border border-ink/15 bg-white text-ink hover:bg-ink hover:text-white"
+            : "bg-primary text-primary-foreground hover:bg-primary/90"
         }`}
       >
         Falar comigo no WhatsApp <ArrowUpRight className="h-3.5 w-3.5" />
