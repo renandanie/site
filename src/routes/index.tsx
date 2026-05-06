@@ -220,45 +220,90 @@ function Index() {
         </div>
       </section>
 
-      {/* PRÓXIMOS PASSOS */}
-      <section className="px-6 py-24">
+      {/* ETAPAS START */}
+      <section className="relative overflow-hidden px-6 py-28">
+        <div className="pointer-events-none absolute inset-0 -z-10">
+          <div className="absolute left-1/2 top-0 h-[420px] w-[820px] -translate-x-1/2 rounded-full opacity-30 blur-3xl"
+            style={{ background: "radial-gradient(closest-side, oklch(0.7 0.2 25 / 0.35), transparent)" }} />
+          <div className="absolute right-0 bottom-0 h-[320px] w-[520px] rounded-full opacity-20 blur-3xl"
+            style={{ background: "radial-gradient(closest-side, oklch(0.62 0.18 250 / 0.4), transparent)" }} />
+        </div>
+
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <p className="text-xs font-semibold tracking-[0.25em] text-primary">PROCESSO</p>
-            <h2 className="mx-auto mt-5 max-w-3xl font-serif text-4xl leading-tight text-ink md:text-5xl">
-              Próximos passos para{" "}
-              <span className="italic text-[oklch(0.7_0.2_25)]">iniciar o projeto</span>
+            <h2 className="mx-auto mt-5 max-w-3xl font-serif text-4xl leading-tight text-ink md:text-6xl">
+              Etapas para o{" "}
+              <span className="italic text-[oklch(0.7_0.2_25)]">"Start"</span>{" "}
+              do projeto
             </h2>
-            <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">
-              Um processo simples e estruturado para começar a transformar seus resultados.
+            <p className="mx-auto mt-6 max-w-2xl text-muted-foreground md:text-lg">
+              Um caminho claro, do contrato à primeira veiculação — sem fricção, com método.
             </p>
           </div>
 
-          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              { icon: FileSignature, label: "Assinatura do contrato" },
-              { icon: CreditCard, label: "Efetuar pagamento" },
-              { icon: MessageSquare, label: "Grupo no WhatsApp e agendamento de reunião de boas-vindas" },
-              { icon: Users, label: "Reunião de boas-vindas e captação de informações para o projeto" },
-              { icon: Presentation, label: "Reunião de Debriefing em até 7 dias para apresentar o plano de ação" },
-              { icon: Play, label: "Primeiros anúncios começam a ficar ativos nas plataformas" },
-              { icon: BarChart2, label: "Comunicação semanal e mensal de resultados" },
-            ].map(({ icon: Icon, label }, i) => (
+          <div className="relative mt-16">
+            {/* timeline line (desktop) */}
+            <div className="pointer-events-none absolute left-0 right-0 top-[34px] hidden h-px bg-gradient-to-r from-transparent via-border to-transparent lg:block" />
+
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                { icon: FileSignature, title: "Assinatura do contrato", desc: "Formalizamos a parceria de forma simples e 100% digital." },
+                { icon: CreditCard, title: "Pagamento confirmado", desc: "Liberação imediata para o início da operação." },
+                { icon: MessageSquare, title: "Grupo no WhatsApp", desc: "Canal direto criado e reunião de boas-vindas agendada." },
+                { icon: Users, title: "Boas-vindas & briefing", desc: "Captação completa das informações estratégicas do seu negócio." },
+                { icon: Presentation, title: "Debriefing em 7 dias", desc: "Apresentação do plano de ação personalizado para sua marca." },
+                { icon: Play, title: "Campanhas no ar", desc: "Primeiros anúncios ativos nas plataformas escolhidas." },
+                { icon: BarChart2, title: "Acompanhamento contínuo", desc: "Comunicação semanal e relatório mensal de resultados." },
+              ].map(({ icon: Icon, title, desc }, i) => (
+                <div
+                  key={title}
+                  className="group relative flex flex-col rounded-3xl border border-border/70 bg-white/80 p-6 backdrop-blur transition-all hover:-translate-y-1.5 hover:border-ink/30"
+                  style={{ boxShadow: "var(--shadow-soft)" }}
+                >
+                  <div className="flex items-center justify-between">
+                    <span
+                      className="grid h-11 w-11 place-items-center rounded-full font-serif text-base font-semibold text-white"
+                      style={{ background: "var(--gradient-cta)", boxShadow: "var(--shadow-glow)" }}
+                    >
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <Icon className="h-6 w-6 text-ink/40 transition-colors group-hover:text-primary" strokeWidth={1.5} />
+                  </div>
+                  <h3 className="mt-6 font-serif text-xl text-ink">{title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{desc}</p>
+                </div>
+              ))}
+
+              {/* CTA card occupying the 8th cell */}
               <div
-                key={label}
-                className="flex flex-col items-center rounded-3xl border border-border/70 bg-white/75 p-6 text-center backdrop-blur transition-all hover:-translate-y-1"
-                style={{ boxShadow: "var(--shadow-soft)" }}
+                className="relative flex flex-col justify-between overflow-hidden rounded-3xl p-6 text-white"
+                style={{ background: "linear-gradient(135deg, oklch(0.22 0.04 260), oklch(0.32 0.08 270))", boxShadow: "var(--shadow-card)" }}
               >
-                <span className="grid h-10 w-10 place-items-center rounded-full bg-primary/10 text-sm font-bold text-primary">
-                  {i + 1}
-                </span>
-                <Icon className="mt-5 h-7 w-7 text-primary" strokeWidth={1.5} />
-                <p className="mt-5 text-sm leading-relaxed text-ink/85">{label}</p>
+                <div>
+                  <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] backdrop-blur">
+                    Vamos começar
+                  </span>
+                  <h3 className="mt-5 font-serif text-2xl leading-snug">
+                    Pronto para dar o <span className="italic">start</span>?
+                  </h3>
+                  <p className="mt-2 text-sm text-white/70">
+                    Em poucos dias sua operação estará rodando com método.
+                  </p>
+                </div>
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-ink transition-transform hover:scale-[1.03]"
+                >
+                  <MessageCircle className="h-4 w-4" /> Iniciar meu projeto
+                </a>
               </div>
-            ))}
+            </div>
           </div>
 
-          <div className="mt-12 flex justify-center">
+          <div className="mt-12 flex justify-center lg:hidden">
             <a
               href={WHATSAPP_URL}
               target="_blank"
