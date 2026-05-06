@@ -346,7 +346,7 @@ function Index() {
       </section>
 
       <footer className="border-t border-border/70 px-6 py-10 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Especialista em Tráfego Pago. Todos os direitos reservados.
+        © 2025 Especialista em Tráfego Pago. Todos os direitos reservados.
       </footer>
 
       {/* Floating WhatsApp */}
