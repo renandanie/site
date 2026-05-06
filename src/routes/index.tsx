@@ -61,6 +61,7 @@ function Header() {
         </Link>
         <nav className="hidden gap-8 text-sm text-muted-foreground md:flex">
           <a href="#sobre" className="hover:text-ink transition-colors">Sobre</a>
+          <a href="#servicos" className="hover:text-ink transition-colors">Serviços</a>
           <a href="#planos" className="hover:text-ink transition-colors">Planos</a>
           <a href="#contato" className="hover:text-ink transition-colors">Contato</a>
         </nav>
@@ -132,7 +133,7 @@ function Index() {
           </div>
 
           {/* Services grid */}
-          <div className="mt-24 grid gap-8 md:grid-cols-2 md:items-end">
+          <div id="servicos" className="mt-24 grid gap-8 md:grid-cols-2 md:items-end scroll-mt-32">
             <h2 className="font-serif text-4xl leading-[1.05] text-ink md:text-5xl lg:text-6xl">
               Tudo que sua operação de mídia precisa para{" "}
               <span className="italic text-primary">escalar</span>.
