@@ -168,15 +168,6 @@ function Index() {
                     </span>
                   ))}
                 </div>
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white transition-transform hover:scale-[1.03]"
-                  style={{ background: "linear-gradient(135deg, #25D366, #128C7E)", boxShadow: "0 10px 30px -12px rgba(37,211,102,0.5)" }}
-                >
-                  <MessageCircle className="h-4 w-4" /> Falar no WhatsApp
-                </a>
               </div>
             ))}
           </div>
