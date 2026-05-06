@@ -179,9 +179,9 @@ function Index() {
 
       {/* SOBRE */}
       <section id="sobre" className="px-6 py-24">
-        <div className="mx-auto grid max-w-6xl items-center gap-14 md:grid-cols-[auto,1fr]">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-14 md:flex-row md:items-start">
           {/* Foto + nome */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-shrink-0 flex-col items-center">
             <div className="relative">
               <div
                 className="absolute -inset-4 rounded-[2rem] opacity-60 blur-2xl"
@@ -207,7 +207,7 @@ function Index() {
           </div>
 
           {/* Texto */}
-          <div>
+          <div className="flex-1">
             <p className="text-xs font-semibold tracking-[0.25em] text-primary">SOBRE</p>
             <h2 className="mt-5 font-serif text-4xl leading-tight text-ink md:text-5xl lg:text-6xl">
               Mídia paga feita com <span className="italic text-primary">método</span>,
