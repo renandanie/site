@@ -155,11 +155,11 @@ function Index() {
             ].map(({ icon: Icon, title, desc, tags }) => (
               <div
                 key={title}
-                className="rounded-3xl border border-border/70 bg-white/75 p-7 backdrop-blur transition-all hover:-translate-y-1"
+                className="group rounded-3xl border border-border/70 bg-white/75 p-7 backdrop-blur transition-all duration-300 hover:-translate-y-2 hover:border-primary/40 hover:bg-white hover:shadow-[0_25px_60px_-15px_oklch(0.62_0.18_250/0.35)]"
                 style={{ boxShadow: "var(--shadow-soft)" }}
               >
-                <span className="grid h-11 w-11 place-items-center rounded-full border border-border/70 bg-white">
-                  <Icon className="h-5 w-5 text-primary" />
+                <span className="grid h-11 w-11 place-items-center rounded-full border border-border/70 bg-white transition-all duration-300 group-hover:scale-110 group-hover:border-primary/50">
+                  <Icon className="h-5 w-5 text-primary transition-transform duration-300 group-hover:rotate-6" />
                 </span>
                 <h3 className="mt-6 font-serif text-2xl text-ink">{title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{desc}</p>
