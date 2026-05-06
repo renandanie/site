@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Check, ArrowUpRight, MessageCircle, Award, Target, BarChart3, Sparkles, TrendingUp, Zap, Briefcase, FileSignature, CreditCard, MessageSquare, Users, Presentation, Play, BarChart2 } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -54,9 +55,9 @@ function Header() {
     <header className="sticky top-4 z-40 mx-auto w-[min(1200px,calc(100%-2rem))]">
       <div className="flex items-center justify-between rounded-full border border-border/70 bg-white/80 px-5 py-3 shadow-[var(--shadow-soft)] backdrop-blur-xl">
         <Link to="/" className="flex items-center gap-2">
-          <span className="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-[oklch(0.7_0.18_25)] to-[oklch(0.62_0.18_250)] text-white font-bold text-sm">tP</span>
+          <img src={logo} alt="Estratégia ADS" className="h-9 w-9 rounded-full object-cover" />
           <span className="font-semibold text-ink">
-            Tráfego<span className="text-primary"> Estratégico</span>
+            Estratégia<span className="text-primary"> ADS</span>
           </span>
         </Link>
         <nav className="hidden gap-8 text-sm text-muted-foreground md:flex">
