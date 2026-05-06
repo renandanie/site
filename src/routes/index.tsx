@@ -29,6 +29,7 @@ type Plan = {
   highlight?: boolean;
   includedCount: number;
   featureOverrides?: Record<number, string>;
+  highlightAds?: boolean;
 };
 
 const PLANS: Plan[] = [
@@ -45,10 +46,10 @@ const PLANS: Plan[] = [
     price: "R$ 998",
     includedCount: 5,
     highlight: true,
-    featureOverrides: { 3: "Suporte via WhatsApp (Prioridade)" },
+    featureOverrides: { 0: "Gestão de anúncio no Meta ou Google", 3: "Suporte via WhatsApp (Prioridade)" },
   },
-  { name: "Ouro", tagline: "OPERAÇÃO COMPLETA", price: "R$ 1.618", includedCount: 6 },
-  { name: "Diamante", tagline: "CONSULTORIA PREMIUM", prefix: "a partir de", price: "R$ 2.998", includedCount: 8 },
+  { name: "Ouro", tagline: "OPERAÇÃO COMPLETA", price: "R$ 1.618", includedCount: 6, highlightAds: true },
+  { name: "Diamante", tagline: "CONSULTORIA PREMIUM", prefix: "a partir de", price: "R$ 2.998", includedCount: 8, highlightAds: true },
 ];
 
 function Header() {
