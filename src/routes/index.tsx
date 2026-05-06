@@ -200,9 +200,6 @@ function Index() {
             </div>
             <div className="mt-6 text-center">
               <p className="font-serif text-3xl text-ink">Renan Daniel</p>
-              <p className="mt-1 text-xs font-semibold tracking-[0.25em] text-primary">
-                ESTRATEGISTA DIGITAL
-              </p>
             </div>
           </div>
 
@@ -220,7 +217,7 @@ function Index() {
               tem propósito — desde a estratégia de funil até a otimização diária.
             </p>
 
-            <ul className="mt-8 space-y-3">
+            <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {[
                 "Formado em Marketing",
                 "Pós-graduado em Mídias Digitais — PUC",
