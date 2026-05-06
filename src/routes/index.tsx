@@ -419,8 +419,8 @@ function PlanCard({ plan }: { plan: Plan }) {
       style={{ boxShadow: isHighlight ? "var(--shadow-card)" : "var(--shadow-soft)" }}
     >
       {isHighlight && (
-        <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-ink px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-white">
-          Mais Vendido
+        <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-pre-wrap rounded-full bg-ink px-4 py-1.5 text-center text-[10px] font-bold uppercase tracking-[0.18em] text-white">
+          {"Mais Popular\n\n"}
         </span>
       )}
 
