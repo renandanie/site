@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Check, ArrowUpRight, MessageCircle, Award, Target, BarChart3, Sparkles, TrendingUp, Zap, Briefcase } from "lucide-react";
+import { Check, ArrowUpRight, MessageCircle, Award, Target, BarChart3, Sparkles, TrendingUp, Zap, Briefcase, FileSignature, CreditCard, MessageSquare, Users, Presentation, Play, BarChart2 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -217,6 +217,58 @@ function Index() {
           <p className="mt-12 text-center text-sm font-medium text-muted-foreground">
             Todos os planos incluem reunião estratégica gratuita na contratação.
           </p>
+        </div>
+      </section>
+
+      {/* PRÓXIMOS PASSOS */}
+      <section className="px-6 py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center">
+            <p className="text-xs font-semibold tracking-[0.25em] text-primary">PROCESSO</p>
+            <h2 className="mx-auto mt-5 max-w-3xl font-serif text-4xl leading-tight text-ink md:text-5xl">
+              Próximos passos para{" "}
+              <span className="italic text-[oklch(0.7_0.2_25)]">iniciar o projeto</span>
+            </h2>
+            <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">
+              Um processo simples e estruturado para começar a transformar seus resultados.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { icon: FileSignature, label: "Assinatura do contrato" },
+              { icon: CreditCard, label: "Efetuar pagamento" },
+              { icon: MessageSquare, label: "Grupo no WhatsApp e agendamento de reunião de boas-vindas" },
+              { icon: Users, label: "Reunião de boas-vindas e captação de informações para o projeto" },
+              { icon: Presentation, label: "Reunião de Debriefing em até 7 dias para apresentar o plano de ação" },
+              { icon: Play, label: "Primeiros anúncios começam a ficar ativos nas plataformas" },
+              { icon: BarChart2, label: "Comunicação semanal e mensal de resultados" },
+            ].map(({ icon: Icon, label }, i) => (
+              <div
+                key={label}
+                className="flex flex-col items-center rounded-3xl border border-border/70 bg-white/75 p-6 text-center backdrop-blur transition-all hover:-translate-y-1"
+                style={{ boxShadow: "var(--shadow-soft)" }}
+              >
+                <span className="grid h-10 w-10 place-items-center rounded-full bg-primary/10 text-sm font-bold text-primary">
+                  {i + 1}
+                </span>
+                <Icon className="mt-5 h-7 w-7 text-primary" strokeWidth={1.5} />
+                <p className="mt-5 text-sm leading-relaxed text-ink/85">{label}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 flex justify-center">
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-[1.03]"
+              style={{ background: "linear-gradient(135deg, #25D366, #128C7E)", boxShadow: "0 15px 40px -10px rgba(37,211,102,0.5)" }}
+            >
+              <MessageCircle className="h-4 w-4" /> Iniciar meu projeto
+            </a>
+          </div>
         </div>
       </section>
 
