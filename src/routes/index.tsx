@@ -465,18 +465,12 @@ function PlanCard({ plan }: { plan: Plan }) {
           return (
             <li key={feature} className="flex items-start gap-2.5">
               {included ? (
-                <Check className={`mt-0.5 h-4 w-4 shrink-0 ${isAdsHighlight ? "text-[oklch(0.7_0.2_25)]" : "text-primary"}`} strokeWidth={3} />
+                <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" strokeWidth={3} />
               ) : (
                 <span className="mt-0.5 grid h-4 w-4 shrink-0 place-items-center text-muted-foreground/50">×</span>
               )}
               {included ? (
-                <span className={isAdsHighlight ? "font-semibold text-ink" : "text-ink/85"}>
-                  {isAdsHighlight ? (
-                    <>Gestão de anúncio no <span className="text-[oklch(0.62_0.18_250)]">Meta</span> e <span className="text-[oklch(0.7_0.2_25)]">Google</span></>
-                  ) : (
-                    label
-                  )}
-                </span>
+                <span className={isAdsHighlight ? "font-semibold text-ink" : "text-ink/85"}>{label}</span>
               ) : (
                 <s className="text-muted-foreground/55">{label}</s>
               )}
