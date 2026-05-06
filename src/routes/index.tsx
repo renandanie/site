@@ -82,7 +82,7 @@ function Index() {
   return (
     <main className="min-h-screen">
       {/* Top banner */}
-      <div className="bg-ink py-2.5 text-center text-xs font-medium text-white/90">
+      <div className="sticky top-0 z-50 bg-ink py-2.5 text-center text-xs font-medium text-white/90">
         Tráfego pago não basta — <span className="text-white font-semibold">funil de vendas + comercial alinhado = conversão real.</span>
       </div>
 
