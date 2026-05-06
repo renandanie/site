@@ -194,8 +194,18 @@ function Index() {
                 <img
                   src={renan}
                   alt="Renan Daniel — Estrategista Digital"
-                  className="h-[320px] w-[240px] object-cover"
+                  className="h-[340px] w-[300px] object-cover"
                 />
+                <div className="absolute inset-x-3 bottom-3 grid grid-cols-2 items-center gap-2 rounded-2xl border border-white/60 bg-white/90 px-4 py-3 backdrop-blur-md">
+                  <div className="text-center">
+                    <p className="text-[10px] font-semibold tracking-[0.18em] text-muted-foreground">VENDAS</p>
+                    <p className="font-serif text-2xl text-primary">9 anos</p>
+                  </div>
+                  <div className="border-l border-border/70 text-center">
+                    <p className="text-[10px] font-semibold tracking-[0.18em] text-muted-foreground">MARKETING</p>
+                    <p className="font-serif text-2xl text-ink">7 anos</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="mt-6 text-center">
