@@ -231,13 +231,6 @@ function Index() {
               ))}
             </ul>
 
-            <div
-              className="mt-8 inline-flex items-center gap-2 rounded-full border border-border/70 bg-white/80 px-4 py-2 text-sm text-ink backdrop-blur"
-              style={{ boxShadow: "var(--shadow-soft)" }}
-            >
-              <Briefcase className="h-4 w-4 text-primary" />
-              Estrategista Digital na <span className="font-semibold">Arteon Agência</span>
-            </div>
           </div>
         </div>
       </section>
