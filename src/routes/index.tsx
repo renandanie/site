@@ -232,6 +232,20 @@ function Index() {
               ))}
             </ul>
 
+            <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+              {[
+                { n: "4 anos", l: "em gestão de anúncios" },
+                { n: "+R$1M", l: "gerenciados em anúncios" },
+                { n: "8 anos", l: "em marketing e redes sociais" },
+                { n: "9 anos", l: "em planejamento comercial" },
+              ].map((s) => (
+                <div key={s.l} className="rounded-lg border border-border/60 bg-white/60 px-3 py-2">
+                  <p className="font-serif text-lg leading-tight text-primary">{s.n}</p>
+                  <p className="text-xs leading-snug text-muted-foreground">{s.l}</p>
+                </div>
+              ))}
+            </div>
+
           </div>
         </div>
       </section>
