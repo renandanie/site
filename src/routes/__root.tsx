@@ -29,13 +29,17 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Especialista em Tráfego Pago | Gestão Estratégica de Anúncios" },
-      { name: "description", content: "Transforme investimento em lucro com gestão estratégica de tráfego pago. 5 anos de Marketing Digital, MBA USP e Pós PUC." },
-      { property: "og:title", content: "Especialista em Tráfego Pago | Gestão Estratégica" },
-      { property: "og:description", content: "Não entrego apenas cliques, entrego estratégia de negócio para o seu faturamento escalar." },
+      { title: "Especialista em Tráfego Pago | Gestão Estratégica Marketing" },
+      { name: "description", content: "Transforme investimento em lucro com gestão estratégica de tráfego pago. Especialista em escala de negócios com visão multicanal." },
+      { property: "og:title", content: "Especialista em Tráfego Pago | Gestão Estratégica Marketing" },
+      { property: "og:description", content: "Transforme investimento em lucro com gestão estratégica de tráfego pago. Especialista em escala de negócios com visão multicanal." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Especialista em Tráfego Pago | Gestão Estratégica Marketing" },
+      { name: "twitter:description", content: "Transforme investimento em lucro com gestão estratégica de tráfego pago. Especialista em escala de negócios com visão multicanal." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0fb31825-c02a-4f15-ad6a-22f163dd89be/id-preview-b3574ec9--d48b8bc1-6369-4909-ac3e-fd1020197b3b.lovable.app-1778533093971.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0fb31825-c02a-4f15-ad6a-22f163dd89be/id-preview-b3574ec9--d48b8bc1-6369-4909-ac3e-fd1020197b3b.lovable.app-1778533093971.png" },
     ],
     links: [
       {
