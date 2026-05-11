@@ -296,7 +296,7 @@ function Index() {
                 { icon: CreditCard, title: "Pagamento confirmado", desc: "Liberação imediata para o início da operação." },
                 { icon: MessageSquare, title: "Grupo no WhatsApp", desc: "Canal direto criado e reunião de boas-vindas agendada." },
                 { icon: Users, title: "Boas-vindas & briefing", desc: "Captação completa das informações estratégicas do seu negócio." },
-                { icon: Presentation, title: "Debriefing em 7 dias", desc: "Apresentação do plano de ação personalizado para sua marca." },
+                { icon: Presentation, title: "Debriefing em 10 dias", desc: "Apresentação do plano de ação personalizado para sua marca." },
                 { icon: Play, title: "Campanhas no ar", desc: "Primeiros anúncios ativos nas plataformas escolhidas." },
                 { icon: BarChart2, title: "Acompanhamento contínuo", desc: "Comunicação semanal e relatório mensal de resultados." },
               ].map(({ icon: Icon, title, desc }, i) => (
