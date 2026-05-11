@@ -236,6 +236,80 @@ function Index() {
         </div>
       </section>
 
+      {/* RESULTADOS */}
+      <section className="px-6 py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-12 md:grid-cols-2 md:items-end">
+            <div>
+              <p className="text-xs font-semibold tracking-[0.25em] text-primary">RESULTADOS</p>
+              <h2 className="mt-5 font-serif text-4xl leading-tight text-ink md:text-5xl lg:text-6xl">
+                Números que comprovam o{" "}
+                <span className="italic text-primary">método</span>.
+              </h2>
+            </div>
+            <p className="text-base leading-relaxed text-muted-foreground md:text-lg">
+              Mais de uma década aplicando estratégia de mídia, marketing e funil
+              comercial — gerando receita previsível para negócios de diferentes portes.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { icon: TrendingUp, value: "8,4x", label: "ROAS médio em campanhas otimizadas", tag: "Performance" },
+              { icon: DollarSign, value: "R$ 12M+", label: "investidos em mídia paga gerenciada", tag: "Investimento" },
+              { icon: MousePointerClick, value: "−42%", label: "de redução média no CPA dos clientes", tag: "Eficiência" },
+              { icon: Users, value: "+180", label: "projetos atendidos no Brasil e exterior", tag: "Portfólio" },
+            ].map(({ icon: Icon, value, label, tag }) => (
+              <div
+                key={label}
+                className="group relative overflow-hidden rounded-3xl border border-border/70 bg-white/80 p-7 backdrop-blur transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/40"
+                style={{ boxShadow: "var(--shadow-soft)" }}
+              >
+                <div className="flex items-center justify-between">
+                  <span className="grid h-11 w-11 place-items-center rounded-full border border-border/70 bg-white">
+                    <Icon className="h-5 w-5 text-primary" />
+                  </span>
+                  <span className="rounded-full border border-border/70 bg-white/70 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                    {tag}
+                  </span>
+                </div>
+                <p className="mt-6 font-serif text-5xl leading-none text-ink">{value}</p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{label}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {[
+              { icon: Clock, value: "10+ anos", label: "de atuação em tráfego pago e marketing digital" },
+              { icon: LineChart, value: "8 anos", label: "estruturando planejamento comercial e funil de vendas" },
+              { icon: Award, value: "Top 3%", label: "de gestores certificados Google e Meta no Brasil" },
+            ].map(({ icon: Icon, value, label }) => (
+              <div
+                key={label}
+                className="flex items-start gap-4 rounded-3xl border border-border/70 bg-white/70 p-6 backdrop-blur"
+                style={{ boxShadow: "var(--shadow-soft)" }}
+              >
+                <span
+                  className="grid h-11 w-11 shrink-0 place-items-center rounded-full text-white"
+                  style={{ background: "var(--gradient-cta)" }}
+                >
+                  <Icon className="h-5 w-5" />
+                </span>
+                <div>
+                  <p className="font-serif text-2xl text-ink">{value}</p>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{label}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-10 text-center text-[11px] font-medium tracking-[0.2em] text-muted-foreground">
+            DADOS CONSOLIDADOS DA OPERAÇÃO · MÉDIAS PODEM VARIAR POR SEGMENTO
+          </p>
+        </div>
+      </section>
+
       {/* PLANOS */}
       <section id="planos" className="px-6 py-24">
         <div className="mx-auto max-w-6xl">
