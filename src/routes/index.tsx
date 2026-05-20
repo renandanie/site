@@ -88,7 +88,8 @@ function Header() {
 }
 
 const WHATSAPP_FLOAT = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Estou navegando no seu site e gostaria de falar com um especialista sobre tráfego e estratégia.")}`;
-  return (
+
+function Index() {
     <main className="min-h-screen">
       {/* Top banner */}
       <div className="sticky top-0 z-50 bg-ink py-2.5 text-center text-xs font-medium text-white/90">
