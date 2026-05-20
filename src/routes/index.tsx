@@ -499,7 +499,7 @@ function PlanCard({ plan }: { plan: Plan }) {
       </ul>
 
       <a
-        href={WHATSAPP_URL}
+        href={planWhatsapp(plan.name)}
         target="_blank"
         rel="noopener noreferrer"
         className={`mt-8 inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition-transform hover:scale-[1.02] ${
