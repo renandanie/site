@@ -123,7 +123,7 @@ function Index() {
 
             <div className="flex flex-wrap gap-3">
               <a
-                href={WHATSAPP_URL}
+                href={WHATSAPP_HERO}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
