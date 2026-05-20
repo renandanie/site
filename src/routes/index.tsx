@@ -393,7 +393,7 @@ function Index() {
             onde está o maior potencial de crescimento.
           </p>
           <a
-            href={WHATSAPP_URL}
+            href={WHATSAPP_FINAL}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-8 inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
