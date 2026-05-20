@@ -7,7 +7,13 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const WHATSAPP_URL = "https://wa.me/5511970828504";
+const WHATSAPP_BASE = "https://wa.me/5511970828504";
+const WHATSAPP_URL = WHATSAPP_BASE;
+const WHATSAPP_HERO = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Estou no seu site e gostaria de entender como transformar meu investimento em lucro com gestão estratégica.")}`;
+const WHATSAPP_CUSTOM = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Gostaria de solicitar um orçamento para um Plano Customizado sob medida.")}`;
+const WHATSAPP_FINAL = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Quero agendar uma conversa estratégica para desenhar a minha próxima escalada.")}`;
+const planWhatsapp = (name: string) =>
+  `${WHATSAPP_BASE}?text=${encodeURIComponent(`Olá! Gostaria de saber mais informações sobre o Plano ${name}.`)}`;
 
 const FEATURES = [
   "Gestão de anúncio no Meta e Google",
@@ -117,7 +123,7 @@ function Index() {
 
             <div className="flex flex-wrap gap-3">
               <a
-                href={WHATSAPP_URL}
+                href={WHATSAPP_HERO}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
@@ -277,6 +283,51 @@ function Index() {
         </div>
       </section>
 
+      {/* PLANO CUSTOMIZADO */}
+      <section className="px-6 pb-8">
+        <div className="mx-auto max-w-6xl">
+          <div
+            className="relative overflow-hidden rounded-3xl border border-border/70 p-8 md:p-10"
+            style={{
+              background:
+                "linear-gradient(135deg, oklch(0.22 0.04 260), oklch(0.32 0.08 270))",
+              boxShadow: "var(--shadow-card)",
+            }}
+          >
+            <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full opacity-30 blur-3xl"
+              style={{ background: "radial-gradient(closest-side, oklch(0.7 0.2 25 / 0.7), transparent)" }} />
+            <div className="pointer-events-none absolute -left-16 -bottom-16 h-56 w-56 rounded-full opacity-25 blur-3xl"
+              style={{ background: "radial-gradient(closest-side, oklch(0.62 0.18 250 / 0.7), transparent)" }} />
+
+            <div className="relative flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
+              <div className="max-w-2xl">
+                <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-white backdrop-blur">
+                  Sob medida
+                </span>
+                <h3 className="mt-4 font-serif text-3xl leading-tight text-white md:text-4xl">
+                  Precisa de uma estratégia <span className="italic text-[oklch(0.85_0.15_85)]">sob medida</span>?
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-white/75 md:text-base">
+                  Desenhamos um plano exclusivo para a realidade da sua empresa —
+                  combinando mídia, funil de vendas e consultoria comercial conforme
+                  a maturidade e os objetivos do seu negócio.
+                </p>
+              </div>
+              <a
+                href={WHATSAPP_CUSTOM}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex shrink-0 items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-ink transition-transform hover:scale-[1.03]"
+                style={{ boxShadow: "var(--shadow-glow)" }}
+              >
+                Falar com Especialista <ArrowUpRight className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* ETAPAS START */}
       <section className="relative overflow-hidden px-6 py-28">
         <div className="pointer-events-none absolute inset-0 -z-10">
@@ -387,7 +438,7 @@ function Index() {
             onde está o maior potencial de crescimento.
           </p>
           <a
-            href={WHATSAPP_URL}
+            href={WHATSAPP_FINAL}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-8 inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
@@ -493,7 +544,7 @@ function PlanCard({ plan }: { plan: Plan }) {
       </ul>
 
       <a
-        href={WHATSAPP_URL}
+        href={planWhatsapp(plan.name)}
         target="_blank"
         rel="noopener noreferrer"
         className={`mt-8 inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition-transform hover:scale-[1.02] ${
