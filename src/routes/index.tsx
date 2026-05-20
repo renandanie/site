@@ -460,7 +460,7 @@ function Index() {
 
       {/* Floating WhatsApp */}
       <a
-        href={WHATSAPP_URL}
+        href={WHATSAPP_FLOAT}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"
