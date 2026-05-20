@@ -87,7 +87,7 @@ function Header() {
   );
 }
 
-function Index() {
+const WHATSAPP_FLOAT = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Estou navegando no seu site e gostaria de falar com um especialista sobre tráfego e estratégia.")}`;
   return (
     <main className="min-h-screen">
       {/* Top banner */}
