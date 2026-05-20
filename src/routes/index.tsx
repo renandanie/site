@@ -87,6 +87,8 @@ function Header() {
   );
 }
 
+const WHATSAPP_FLOAT = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Estou navegando no seu site e gostaria de falar com um especialista sobre tráfego e estratégia.")}`;
+
 function Index() {
   return (
     <main className="min-h-screen">
@@ -458,7 +460,7 @@ function Index() {
 
       {/* Floating WhatsApp */}
       <a
-        href={WHATSAPP_URL}
+        href={WHATSAPP_FLOAT}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"
