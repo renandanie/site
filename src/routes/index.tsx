@@ -7,7 +7,13 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const WHATSAPP_URL = "https://wa.me/5511970828504";
+const WHATSAPP_BASE = "https://wa.me/5511970828504";
+const WHATSAPP_URL = WHATSAPP_BASE;
+const WHATSAPP_HERO = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Estou no seu site e gostaria de entender como transformar meu investimento em lucro com gestão estratégica.")}`;
+const WHATSAPP_CUSTOM = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Gostaria de solicitar um orçamento para um Plano Customizado sob medida.")}`;
+const WHATSAPP_FINAL = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Quero agendar uma conversa estratégica para desenhar a minha próxima escalada.")}`;
+const planWhatsapp = (name: string) =>
+  `${WHATSAPP_BASE}?text=${encodeURIComponent(`Olá! Gostaria de saber mais informações sobre o Plano ${name}.`)}`;
 
 const FEATURES = [
   "Gestão de anúncio no Meta e Google",
