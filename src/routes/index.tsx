@@ -480,7 +480,7 @@ function Index() {
               <span className="italic text-[oklch(0.7_0.2_25)]">Atendimento Comercial</span>
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-muted-foreground md:text-lg">
-              Estruturas complementares para empresas que buscam eliminar gargalos de resposta, organizar processos e aumentar a taxa de conversão.
+              Uma solução que nasceu da necessidade real de nossos clientes: eliminar as falhas de atendimento comercial e reduzir os altos custos de contratação interna, maximizando os resultados de conversão.
             </p>
           </div>
 
