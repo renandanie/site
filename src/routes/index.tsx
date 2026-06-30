@@ -512,10 +512,10 @@ function Index() {
                 href={WHATSAPP_CRM}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
+                className="mt-8 inline-flex w-full items-center justify-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
                 style={{ background: "var(--gradient-cta)", boxShadow: "var(--shadow-glow)" }}
               >
-                <span role="img" aria-label="envelope">📩</span> Quero um CRM estruturado
+                Quero um CRM estruturado <ArrowRight className="h-3.5 w-3.5" />
               </a>
 
               <p className="invisible mt-5 text-center text-[11px] leading-relaxed text-muted-foreground">
