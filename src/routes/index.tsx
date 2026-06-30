@@ -515,7 +515,7 @@ function Index() {
                 className="mt-8 inline-flex w-full items-center justify-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
                 style={{ background: "var(--gradient-cta)", boxShadow: "var(--shadow-glow)" }}
               >
-                Quero um CRM estruturado <ArrowRight className="h-3.5 w-3.5" />
+                CRM Estruturado <ArrowRight className="h-3.5 w-3.5" />
               </a>
 
             </div>
@@ -556,7 +556,7 @@ function Index() {
                 className="mt-8 inline-flex w-full items-center justify-center text-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
                 style={{ background: "var(--gradient-cta)", boxShadow: "var(--shadow-glow)" }}
               >
-                Profissionalize meu atendimento comercial
+                Comercial Personalizado
               </a>
 
               <div className="mt-5 rounded-lg border border-ink/10 bg-ink/[0.03] px-4 py-3 text-center">
