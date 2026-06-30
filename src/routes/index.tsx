@@ -559,10 +559,10 @@ function Index() {
                 href={WHATSAPP_CLOSER}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
+                className="mt-8 inline-flex w-full items-center justify-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
                 style={{ background: "var(--gradient-cta)", boxShadow: "var(--shadow-glow)" }}
               >
-                <span role="img" aria-label="aperto de mãos">🤝</span> Profissionalize meu atendimento comercial
+                Profissionalize meu atendimento comercial
               </a>
 
               <p className="mt-5 text-center text-[11px] leading-relaxed text-muted-foreground">
