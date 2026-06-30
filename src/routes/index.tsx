@@ -479,9 +479,11 @@ function Index() {
               Soluções de Inteligência e{" "}
               <span className="italic text-[oklch(0.7_0.2_25)]">Atendimento Comercial</span>
             </h2>
-            <p className="mx-auto mt-5 max-w-2xl text-muted-foreground md:text-lg">
-              Uma solução que nasceu da necessidade real de nossos clientes: eliminar as falhas de atendimento comercial e reduzir os altos custos de contratação interna, maximizando os resultados de conversão.
-            </p>
+            <div className="mx-auto mt-6 max-w-2xl rounded-xl border border-primary/10 bg-primary/[0.04] px-6 py-4">
+              <p className="text-sm leading-relaxed text-ink md:text-base">
+                Uma solução que nasceu da necessidade real de nossos clientes: eliminar as falhas de atendimento comercial e reduzir os altos custos de contratação interna, maximizando os resultados de conversão.
+              </p>
+            </div>
           </div>
 
           <div className="mt-14 grid gap-6 md:grid-cols-2 items-stretch">
