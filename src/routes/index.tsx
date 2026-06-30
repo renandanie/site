@@ -566,7 +566,7 @@ function Index() {
               </a>
 
               <p className="mt-5 text-center text-[11px] leading-relaxed text-muted-foreground">
-                <span className="font-semibold text-ink/80">Empresas que já aderiram a esse tipo de serviço:</span> estúdios de pilates, psicólogos, clínicas médicas e de estética, entre outros.
+                <span className="font-semibold text-ink/80">Solução validada e utilizada por:</span> Clínicas médicas e de estética, estúdios de pilates, consultórios de psicologia, escritórios de advocacia, arquitetura e prestadores de serviços.
               </p>
             </div>
           </div>
