@@ -539,12 +539,17 @@ function Index() {
 
                 <div className="mt-8">
                   <p className="text-xs font-semibold tracking-[0.15em] text-muted-foreground uppercase">Preço</p>
-                  <p className="mt-1 font-serif text-2xl text-ink">R$ 1.291,00<span className="text-base">/mês</span></p>
-                  <p className="mt-1 text-sm text-ink/85">nos 2 primeiros meses</p>
-                  <div className="my-2 h-px bg-border/40" />
-                  <p className="font-serif text-xl text-ink">R$ 1.621,00<span className="text-base">/mês</span></p>
-                  <p className="mt-1 text-sm text-ink/85">a partir do 3º mês</p>
-                  <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+                  <ul className="mt-3 space-y-2 text-sm text-ink/90">
+                    <li className="flex items-baseline gap-2">
+                      <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+                      <span><span className="font-serif text-xl text-ink">R$ 1.299,00</span>/mês <span className="text-muted-foreground">(nos 2 primeiros meses)</span></span>
+                    </li>
+                    <li className="flex items-baseline gap-2">
+                      <span className="h-1.5 w-1.5 rounded-full bg-primary/40" />
+                      <span><span className="font-serif text-xl text-ink">R$ 1.499,00</span>/mês <span className="text-muted-foreground">(a partir do 3º mês)</span></span>
+                    </li>
+                  </ul>
+                  <p className="mt-4 text-xs leading-relaxed text-muted-foreground">
                     Serviço independente da contratação de CRM.
                   </p>
                 </div>
