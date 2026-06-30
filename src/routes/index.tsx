@@ -550,8 +550,7 @@ function Index() {
                 href={WHATSAPP_CLOSER}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 inline-flex w-full(product_image)
-                w-full items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
+                className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
                 style={{ background: "var(--gradient-cta)", boxShadow: "var(--shadow-glow)" }}
               >
                 <span role="img" aria-label="aperto de mãos">🤝</span> Profissionalize meu atendimento comercial
