@@ -518,6 +518,11 @@ function Index() {
                 CRM Estruturado <ArrowRight className="h-3.5 w-3.5" />
               </a>
 
+              <div className="mt-5 rounded-lg border border-ink/10 bg-ink/[0.03] px-4 py-3 text-center">
+                <p className="text-[11px] leading-relaxed text-ink">
+                  <span className="font-semibold">Por que ter um CRM configurado?</span> Porque tráfego pago sem processo é desperdício de dinheiro. O CRM garante que nenhum lead seja esquecido, organizando seu comercial para transformar cliques em clientes de forma automática.
+                </p>
+              </div>
             </div>
 
             {/* Card 2 — Closer */}
