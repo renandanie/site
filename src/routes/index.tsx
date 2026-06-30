@@ -517,6 +517,10 @@ function Index() {
               >
                 <span role="img" aria-label="envelope">📩</span> Quero um CRM estruturado
               </a>
+
+              <p className="invisible mt-5 text-center text-[11px] leading-relaxed text-muted-foreground">
+                <span className="font-semibold text-ink/80">Empresas que já aderiram a esse tipo de serviço:</span> estúdios de pilates, psicólogos, clínicas médicas e de estética, entre outros.
+              </p>
             </div>
 
             {/* Card 2 — Closer */}
