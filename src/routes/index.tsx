@@ -12,8 +12,8 @@ const WHATSAPP_URL = WHATSAPP_BASE;
 const WHATSAPP_HERO = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Estou no seu site e gostaria de entender como transformar meu investimento em lucro com gestão estratégica.")}`;
 const WHATSAPP_CUSTOM = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Gostaria de solicitar um orçamento para um Plano Customizado sob medida.")}`;
 const WHATSAPP_FINAL = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Quero agendar uma conversa estratégica para desenhar a minha próxima escalada.")}`;
-const WHATSAPP_CRM = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Vi no site sobre a Implementação de CRM e gostaria de estruturar meus processos comerciais. Podemos conversar?")}`;
-const WHATSAPP_CLOSER = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Tenho interesse na Operação de Closer Dedicado para profissionalizar meu atendimento comercial. Quero saber mais.")}`;
+const WHATSAPP_CRM = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Vi a solução de Implementação de CRM no site e gostaria de entender melhor como funciona a estruturação para o meu negócio e os valores por usuário.")}`;
+const WHATSAPP_CLOSER = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Tenho interesse na Operação de Closer Dedicado para profissionalizar meu atendimento comercial e gostaria de verificar as condições.")}`;
 const planWhatsapp = (name: string) =>
   `${WHATSAPP_BASE}?text=${encodeURIComponent(`Olá! Gostaria de saber mais informações sobre o Plano ${name}.`)}`;
 
