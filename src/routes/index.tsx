@@ -12,6 +12,8 @@ const WHATSAPP_URL = WHATSAPP_BASE;
 const WHATSAPP_HERO = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Estou no seu site e gostaria de entender como transformar meu investimento em lucro com gestão estratégica.")}`;
 const WHATSAPP_CUSTOM = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Gostaria de solicitar um orçamento para um Plano Customizado sob medida.")}`;
 const WHATSAPP_FINAL = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Quero agendar uma conversa estratégica para desenhar a minha próxima escalada.")}`;
+const WHATSAPP_CRM = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Vi no site sobre a Implementação de CRM e gostaria de estruturar meus processos comerciais. Podemos conversar?")}`;
+const WHATSAPP_CLOSER = `${WHATSAPP_BASE}?text=${encodeURIComponent("Olá! Tenho interesse na Operação de Closer Dedicado para profissionalizar meu atendimento comercial. Quero saber mais.")}`;
 const planWhatsapp = (name: string) =>
   `${WHATSAPP_BASE}?text=${encodeURIComponent(`Olá! Gostaria de saber mais informações sobre o Plano ${name}.`)}`;
 
@@ -451,6 +453,100 @@ function Index() {
           <p className="mt-5 text-[11px] font-medium tracking-[0.2em] text-muted-foreground">
             SEM COMPROMISSO · RESPOSTA RÁPIDA · 100% ONLINE
           </p>
+        </div>
+      </section>
+
+      {/* SOLUÇÕES COMERCIAIS DE CONTINGÊNCIA */}
+      <section className="px-6 py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center">
+            <p className="text-xs font-semibold tracking-[0.25em] text-primary">CONTINGÊNCIA</p>
+            <h2 className="mx-auto mt-5 max-w-3xl font-serif text-4xl leading-tight text-ink md:text-5xl">
+              Soluções Comerciais de{" "}
+              <span className="italic text-[oklch(0.7_0.2_25)]">Contingência</span>
+            </h2>
+            <p className="mx-auto mt-5 max-w-2xl text-muted-foreground md:text-lg">
+              Estruturas de apoio operacional para empresas que buscam eliminar gargalos de atendimento e organizar processos.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-2">
+            {/* Card 1 — CRM */}
+            <div
+              className="flex flex-col rounded-3xl border border-border/70 bg-white/75 backdrop-blur"
+              style={{ boxShadow: "var(--shadow-soft)" }}
+            >
+              <div className="p-8 md:p-10">
+                <h3 className="font-serif text-2xl text-ink">Implementação de CRM</h3>
+                <p className="mt-2 text-sm font-medium tracking-[0.15em] text-primary uppercase">
+                  Estruturação e Organização de Processos
+                </p>
+                <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                  Centralização e acompanhamento estratégico da sua base de leads. Desenhamos o funil de vendas ideal para que sua equipe gerencie cada oportunidade gerada pelas campanhas de mídia com precisão.
+                </p>
+
+                <div className="mt-6 rounded-2xl border border-border/60 bg-white/60 p-5">
+                  <p className="text-xs font-semibold tracking-[0.15em] text-muted-foreground uppercase">Preço</p>
+                  <p className="mt-1 font-serif text-3xl text-ink">Valor sob consulta</p>
+                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+                    O investimento varia conforme o número de usuários na plataforma. Este serviço é uma contratação à parte e independente da operação de closer.
+                  </p>
+                </div>
+
+                <a
+                  href={WHATSAPP_CRM}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
+                  style={{ background: "var(--gradient-cta)", boxShadow: "var(--shadow-glow)" }}
+                >
+                  <span role="img" aria-label="envelope">📩</span> Quero um CRM estruturado
+                </a>
+              </div>
+            </div>
+
+            {/* Card 2 — Closer */}
+            <div
+              className="flex flex-col rounded-3xl border border-border/70 bg-white/75 backdrop-blur"
+              style={{ boxShadow: "var(--shadow-soft)" }}
+            >
+              <div className="p-8 md:p-10">
+                <h3 className="font-serif text-2xl text-ink">Operação de Closer Dedicado</h3>
+                <p className="mt-2 text-sm font-medium tracking-[0.15em] text-primary uppercase">
+                  Atendimento Comercial Personalizado
+                </p>
+                <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                  Solução desenhada para empresas com alta demanda de leads que enfrentam dificuldades no fluxo de atendimento ou custos elevados de contratação interna. Um profissional qualificado assume sua operação em horário comercial.
+                </p>
+
+                <div className="mt-6 rounded-2xl border border-border/60 bg-white/60 p-5">
+                  <p className="text-xs font-semibold tracking-[0.15em] text-muted-foreground uppercase">Preço</p>
+                  <p className="mt-1 font-serif text-3xl text-ink">R$ 1.249,00<span className="text-lg">/mês</span></p>
+                  <p className="mt-1 text-sm text-ink/85">nos 2 primeiros meses</p>
+                  <div className="my-3 h-px bg-border/60" />
+                  <p className="font-serif text-xl text-ink">R$ 1.621,00<span className="text-base">/mês</span></p>
+                  <p className="mt-1 text-sm text-ink/85">a partir do 3º mês</p>
+                  <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+                    Serviço independente da contratação de CRM.
+                  </p>
+                </div>
+
+                <a
+                  href={WHATSAPP_CLOSER}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
+                  style={{ background: "var(--gradient-cta)", boxShadow: "var(--shadow-glow)" }}
+                >
+                  <span role="img" aria-label="aperto de mãos">🤝</span> Profissionalize meu atendimento comercial
+                </a>
+
+                <p className="mt-5 text-center text-xs leading-relaxed text-muted-foreground">
+                  Empresas que já aderiram a esse tipo de serviço: estúdios de pilates, psicólogos, clínicas médicas e de estética, entre outros.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
