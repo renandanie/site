@@ -162,7 +162,7 @@ function Index() {
               { icon: Sparkles, title: "Social Media", desc: "Gestão estratégica de redes sociais com calendário editorial, posicionamento de marca e conteúdo planejado para gerar autoridade e conexão real com a audiência.", tags: ["Estratégia", "Conteúdo", "Engajamento"] },
               { icon: TrendingUp, title: "Estratégia de Escala", desc: "Diagnóstico, planejamento de mídia e roadmap de crescimento com metas claras de CAC, ROAS e LTV para os próximos 90 dias.", tags: ["CAC", "LTV", "Funil"] },
               { icon: Zap, title: "Criativos de Performance", desc: "Direção e produção de criativos baseados em dados, com testes contínuos para reduzir CPA e aumentar CTR consistentemente.", tags: ["UGC", "Hooks", "A/B"] },
-              { icon: Briefcase, title: "Consultoria Comercial", desc: "Estratégias de vendas, estruturação de funil comercial e atuação como closer para transformar leads qualificados em receita previsível.", tags: ["Funil de Vendas", "Closer", "Comercial"] },
+              { icon: Briefcase, title: "Consultoria Comercial", desc: "Estratégias de vendas, estruturação de funil comercial e atuação como closer para transformar leads qualificados em receita previsível.", tags: ["Funil de Vendas", "Closer", "Comercial"], highlight: true, cta: { label: "Ver novas soluções", href: "#solucoes-contingencia" } },
             ].map(({ icon: Icon, title, desc, tags }) => (
               <div
                 key={title}
