@@ -503,7 +503,7 @@ function Index() {
                   <p className="text-xs font-semibold tracking-[0.15em] text-muted-foreground uppercase">Preço</p>
                   <p className="mt-1 font-serif text-3xl text-ink">Valor sob consulta</p>
                   <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                    O investimento varia conforme o número de usuários na plataforma. Serviço independente da contratação de closer.
+                    O investimento varia conforme o número de usuários na plataforma. Serviço independente da operação de closer, <span className="font-semibold text-ink/80">mas que pode ser integrado para garantir uma solução completa.</span>
                   </p>
                 </div>
               </div>
