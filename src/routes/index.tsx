@@ -476,8 +476,8 @@ function Index() {
           <div className="text-center">
             <p className="text-xs font-semibold tracking-[0.25em] text-primary">SUPORTE</p>
             <h2 className="mx-auto mt-5 max-w-3xl font-serif text-4xl leading-tight text-ink md:text-5xl">
-              Módulos de Suporte Comercial e{" "}
-              <span className="italic text-[oklch(0.7_0.2_25)]">Atendimento</span>
+              Soluções de Inteligência e{" "}
+              <span className="italic text-[oklch(0.7_0.2_25)]">Atendimento Comercial</span>
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-muted-foreground md:text-lg">
               Estruturas complementares para empresas que buscam eliminar gargalos de resposta, organizar processos e aumentar a taxa de fechamento.
@@ -502,9 +502,13 @@ function Index() {
                 <div className="mt-8">
                   <p className="text-xs font-semibold tracking-[0.15em] text-muted-foreground uppercase">Preço</p>
                   <p className="mt-1 font-serif text-3xl text-ink">Valor sob consulta</p>
-                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                    O investimento varia conforme o número de usuários na plataforma. Serviço independente da operação de closer, <span className="font-semibold text-ink/80">mas que pode ser integrado para garantir uma solução completa.</span>
+                  <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+                    O investimento varia conforme o número de usuários na plataforma. Serviço independente da operação de closer.
                   </p>
+                  <div className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-primary/10 bg-primary/[0.04] px-3 py-2">
+                    <Zap className="h-3.5 w-3.5 text-primary" />
+                    <span className="text-xs font-semibold text-primary/90">Pode ser integrado para garantir uma solução completa.</span>
+                  </div>
                 </div>
               </div>
 
@@ -518,8 +522,8 @@ function Index() {
                 Quero um CRM estruturado <ArrowRight className="h-3.5 w-3.5" />
               </a>
 
-              <p className="invisible mt-5 text-center text-[11px] leading-relaxed text-muted-foreground">
-                <span className="font-semibold text-ink/80">Empresas que já aderiram a esse tipo de serviço:</span> estúdios de pilates, psicólogos, clínicas médicas e de estética, entre outros.
+              <p className="mt-5 text-center text-[11px] leading-relaxed text-muted-foreground">
+                <span className="font-semibold text-ink/80">Solução validada e utilizada por:</span> Clínicas médicas e de estética, estúdios de pilates, consultórios de psicologia, escritórios de advocacia, arquitetura e prestadores de serviços.
               </p>
             </div>
 
