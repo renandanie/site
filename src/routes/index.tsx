@@ -503,12 +503,8 @@ function Index() {
                   <p className="text-xs font-semibold tracking-[0.15em] text-muted-foreground uppercase">Preço</p>
                   <p className="mt-1 font-serif text-3xl text-ink">Valor sob consulta</p>
                   <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
-                    O investimento varia conforme o número de usuários na plataforma. Serviço independente da operação de closer.
+                    O investimento varia conforme o número de usuários na plataforma. <span className="font-semibold text-ink/80">Serviço independente da operação de closer, mas que pode ser integrado para garantir uma solução completa.</span>
                   </p>
-                  <div className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-primary/10 bg-primary/[0.04] px-3 py-2">
-                    <Zap className="h-3.5 w-3.5 text-primary" />
-                    <span className="text-xs font-semibold text-primary/90">Pode ser integrado para garantir uma solução completa.</span>
-                  </div>
                 </div>
               </div>
 
@@ -522,9 +518,6 @@ function Index() {
                 Quero um CRM estruturado <ArrowRight className="h-3.5 w-3.5" />
               </a>
 
-              <p className="mt-5 text-center text-[11px] leading-relaxed text-muted-foreground">
-                <span className="font-semibold text-ink/80">Solução validada e utilizada por:</span> Clínicas médicas e de estética, estúdios de pilates, consultórios de psicologia, escritórios de advocacia, arquitetura e prestadores de serviços.
-              </p>
             </div>
 
             {/* Card 2 — Closer */}
@@ -553,9 +546,6 @@ function Index() {
                       <span><span className="font-serif text-xl text-ink">R$ 1.499,00</span>/mês <span className="text-muted-foreground">(a partir do 3º mês)</span></span>
                     </li>
                   </ul>
-                  <p className="mt-4 text-xs leading-relaxed text-muted-foreground">
-                    Serviço independente da contratação de CRM.
-                  </p>
                 </div>
               </div>
 
@@ -569,8 +559,8 @@ function Index() {
                 Profissionalize meu atendimento comercial
               </a>
 
-              <div className="mt-5 rounded-lg border border-primary/10 bg-primary/[0.04] px-4 py-3 text-center">
-                <p className="text-[11px] leading-relaxed text-primary/90">
+              <div className="mt-5 rounded-lg border border-ink/10 bg-ink/[0.03] px-4 py-3 text-center">
+                <p className="text-[11px] leading-relaxed text-ink">
                   <span className="font-semibold">Operação validada em:</span> Clínicas médicas e de estética, estúdios de pilates, consultórios de psicologia, escritórios de advocacia, arquitetura e prestadores de serviços.
                 </p>
               </div>
