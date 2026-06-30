@@ -533,7 +533,7 @@ function Index() {
               style={{ boxShadow: "var(--shadow-soft)" }}
             >
               <div className="flex-1">
-                <h3 className="font-serif text-2xl text-ink">Operação de Closer Dedicado</h3>
+                <h3 className="font-serif text-2xl text-ink">Operação de Closer Comercial</h3>
                 <p className="mt-2 text-sm font-medium tracking-[0.15em] text-primary uppercase">
                   Atendimento Comercial Personalizado
                 </p>
@@ -569,9 +569,11 @@ function Index() {
                 Profissionalize meu atendimento comercial
               </a>
 
-              <p className="mt-5 text-center text-[11px] leading-relaxed text-muted-foreground">
-                <span className="font-semibold text-ink/80">Solução validada e utilizada por:</span> Clínicas médicas e de estética, estúdios de pilates, consultórios de psicologia, escritórios de advocacia, arquitetura e prestadores de serviços.
-              </p>
+              <div className="mt-5 rounded-lg border border-primary/10 bg-primary/[0.04] px-4 py-3 text-center">
+                <p className="text-[11px] leading-relaxed text-primary/90">
+                  <span className="font-semibold">Operação validada em:</span> Clínicas médicas e de estética, estúdios de pilates, consultórios de psicologia, escritórios de advocacia, arquitetura e prestadores de serviços.
+                </p>
+              </div>
             </div>
           </div>
         </div>
