@@ -163,12 +163,17 @@ function Index() {
               { icon: TrendingUp, title: "Estratégia de Escala", desc: "Diagnóstico, planejamento de mídia e roadmap de crescimento com metas claras de CAC, ROAS e LTV para os próximos 90 dias.", tags: ["CAC", "LTV", "Funil"] },
               { icon: Zap, title: "Criativos de Performance", desc: "Direção e produção de criativos baseados em dados, com testes contínuos para reduzir CPA e aumentar CTR consistentemente.", tags: ["UGC", "Hooks", "A/B"] },
               { icon: Briefcase, title: "Consultoria Comercial", desc: "Estratégias de vendas, estruturação de funil comercial e atuação como closer para transformar leads qualificados em receita previsível.", tags: ["Funil de Vendas", "Closer", "Comercial"], highlight: true, cta: { label: "Ver novas soluções", href: "#solucoes-contingencia" } },
-            ].map(({ icon: Icon, title, desc, tags }) => (
+            ].map(({ icon: Icon, title, desc, tags, highlight, cta }) => (
               <div
                 key={title}
-                className="group rounded-3xl border border-border/70 bg-white/75 p-7 backdrop-blur transition-all duration-300 hover:-translate-y-2 hover:border-primary/40 hover:bg-white hover:shadow-[0_25px_60px_-15px_oklch(0.62_0.18_250/0.35)]"
+                className={`group rounded-3xl border p-7 backdrop-blur transition-all duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-[0_25px_60px_-15px_oklch(0.62_0.18_250/0.35)] ${highlight ? "border-primary/40 bg-white/90 hover:border-primary/60" : "border-border/70 bg-white/75 hover:border-primary/40"}`}
                 style={{ boxShadow: "var(--shadow-soft)" }}
               >
+                {highlight && (
+                  <span className="mb-4 inline-flex items-center rounded-full border border-primary/30 bg-primary/5 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-primary">
+                    Novas Soluções
+                  </span>
+                )}
                 <span className="grid h-11 w-11 place-items-center rounded-full border border-border/70 bg-white transition-all duration-300 group-hover:scale-110 group-hover:border-primary/50">
                   <Icon className="h-5 w-5 text-primary transition-transform duration-300 group-hover:rotate-6" />
                 </span>
@@ -181,6 +186,15 @@ function Index() {
                     </span>
                   ))}
                 </div>
+                {cta && (
+                  <a
+                    href={cta.href}
+                    className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
+                    style={{ background: "var(--gradient-cta)", boxShadow: "var(--shadow-glow)" }}
+                  >
+                    {cta.label} <ArrowUpRight className="h-4 w-4" />
+                  </a>
+                )}
               </div>
             ))}
           </div>
@@ -457,7 +471,7 @@ function Index() {
       </section>
 
       {/* SOLUÇÕES COMERCIAIS DE CONTINGÊNCIA */}
-      <section className="px-6 py-20">
+      <section id="solucoes-contingencia" className="px-6 py-20 scroll-mt-32">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <p className="text-xs font-semibold tracking-[0.25em] text-primary">CONTINGÊNCIA</p>
@@ -541,8 +555,8 @@ function Index() {
                   <span role="img" aria-label="aperto de mãos">🤝</span> Profissionalize meu atendimento comercial
                 </a>
 
-                <p className="mt-5 text-center text-xs leading-relaxed text-muted-foreground">
-                  Empresas que já aderiram a esse tipo de serviço: estúdios de pilates, psicólogos, clínicas médicas e de estética, entre outros.
+                <p className="mt-5 rounded-xl border border-border/50 bg-white/50 px-4 py-3 text-center text-xs leading-relaxed text-muted-foreground backdrop-blur">
+                  <span className="font-semibold text-ink/80">Empresas que já aderiram a esse tipo de serviço:</span> estúdios de pilates, psicólogos, clínicas médicas e de estética, entre outros.
                 </p>
               </div>
             </div>
