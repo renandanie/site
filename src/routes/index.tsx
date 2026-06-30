@@ -473,7 +473,8 @@ function Index() {
           <div className="mt-14 grid gap-6 md:grid-cols-2">
             {/* Card 1 — CRM */}
             <div
-              className="flex flex-col rounded-3xl border border-border/968: "var(--shadow-soft)" }}"
+              className="flex flex-col rounded-3xl border border-border/70 bg-white/75 backdrop-blur"
+              style={{ boxShadow: "var(--shadow-soft)" }}
             >
               <div className="p-8 md:p-10">
                 <h3 className="font-serif text-2xl text-ink">Implementação de CRM</h3>
